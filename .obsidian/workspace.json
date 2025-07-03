@@ -34,9 +34,21 @@
               "icon": "lucide-file",
               "title": "KYBER KEM"
             }
+          },
+          {
+            "id": "596cf6957f5150db",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-06-24 09.26.53.excalidraw"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -93,7 +105,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "b748d63baabac274",
@@ -175,13 +188,18 @@
       "canvas:Create new canvas": false,
       "daily-notes:Open today's daily note": false,
       "templates:Insert template": false,
-      "command-palette:Open command palette": false
+      "command-palette:Open command palette": false,
+      "card-note:Search Notes": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "4f24bb435e07b768",
+  "active": "596cf6957f5150db",
   "lastOpenFiles": [
-    "InfoBez/Постквантовая криптография/Основные направления/На решётках.md",
     "InfoBez/Постквантовая криптография/Kyber and Dilithium/KYBER KEM.md",
+    "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md",
+    "ОлипПрога/ДП.md",
+    "ОлипПрога",
+    "InfoBez/Постквантовая криптография/Основные направления/На решётках.md",
     "InfoBez/Постквантовая криптография/Лекции/Лекция Антона Леевика.md",
     "InfoBez/Постквантовая криптография/Лекции/V1b-slides-Kyber-and-Dilithium.pdf",
     "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо.md",
@@ -214,14 +232,11 @@
     "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Спуфинг.md",
     "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Полезные записки.md",
     "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Второй рут без следов.md",
-    "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты/CTF.md",
-    "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты/Хранение и представление данных.md",
     "InfoBez/Постквантовая криптография/Основные направления",
     "InfoBez/Постквантовая криптография/Лекции",
     "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты",
     "InfoBez/Постквантовая криптография",
     "InfoBez/Квантовые вычисления",
-    "InfoBez/Зимняя олимпиадная школа МФТИ 2025",
     "Screenshots/Pasted image 20250119151110.png",
     "Screenshots/Pasted image 20250118001650.png",
     "Screenshots/Pasted image 20250118001609.png",
