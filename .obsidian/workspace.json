@@ -57,8 +57,8 @@
               "state": {
                 "file": "Школа/Русский язык/ОЧП.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "ОЧП"
+              "icon": "lucide-ghost",
+              "title": "excalidraw"
             }
           },
           {
@@ -69,8 +69,8 @@
               "state": {
                 "file": "Школа/Русский язык/Однородные члены предложения.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "Однородные члены предложения"
+              "icon": "lucide-ghost",
+              "title": "excalidraw"
             }
           },
           {
@@ -81,8 +81,8 @@
               "state": {
                 "file": "Школа/Русский язык/Сочинение.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "Сочинение"
+              "icon": "lucide-ghost",
+              "title": "excalidraw"
             }
           },
           {
@@ -93,8 +93,8 @@
               "state": {
                 "file": "Школа/Русский язык/Сложносочинённые предложения.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "Сложносочинённые предложения"
+              "icon": "lucide-ghost",
+              "title": "excalidraw"
             }
           },
           {
@@ -105,8 +105,8 @@
               "state": {
                 "file": "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md"
               },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-09-21 19.28.12.excalidraw"
+              "icon": "lucide-ghost",
+              "title": "excalidraw"
             }
           },
           {
@@ -115,14 +115,26 @@
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Школа/Русский язык/Сочинение.md"
+                "file": "Школа/Русский язык/21 Двоеточие.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Сочинение"
+              "title": "21 Двоеточие"
+            }
+          },
+          {
+            "id": "82b33c2c63c8f5e8",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Школа/Русский язык/19 Запятые в ССП.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "19 Запятые в ССП"
             }
           }
         ],
-        "currentTab": 8
+        "currentTab": 9
       }
     ],
     "direction": "vertical"
@@ -179,8 +191,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b748d63baabac274",
@@ -268,17 +279,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "ed19011fa4bf8350",
+  "active": "82b33c2c63c8f5e8",
   "lastOpenFiles": [
-    "Школа/Русский язык/Сочинение.md",
-    "Школа/Русский язык/21 Двоеточие.md",
     "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md",
+    "Школа/Русский язык/19 Запятые в ССП.md",
+    "Школа/Русский язык/21 Двоеточие.md",
+    "Школа/Русский язык/Untitled.md",
+    "Школа/Русский язык/Сочинение.md",
     "Школа/Русский язык/Однородные члены предложения.md",
     "Школа/Русский язык/Сложносочинённые предложения.md",
     "Школа/Русский язык/ОЧП.md",
     "Школа/Русский язык/Междометия.md",
     "Школа/Русский язык/Логическая схема сочинения.md",
-    "Школа/Русский язык/Untitled.md",
     "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md",
     "InfoBez/Постквантовая криптография/Kyber and Dilithium/KYBER KEM.md",
     "ОлипПрога/ДП.md",
@@ -306,7 +318,6 @@
     "InfoBez/Инфобез.md",
     "InfoBez/Зимняя олимпиадная школа МФТИ.md",
     "InfoBez/Постквантовая криптография/Основные направления/На хэш функция.md",
-    "InfoBez/Постквантовая криптография/Основные направления/На многочленах от многих переменных.md",
     "InfoBez/Постквантовая криптография/Основные направления",
     "InfoBez/Постквантовая криптография/Лекции",
     "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты",
