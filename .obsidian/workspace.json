@@ -8,121 +8,45 @@
         "type": "tabs",
         "children": [
           {
-            "id": "1a61b3281755166a",
+            "id": "82b33c2c63c8f5e8",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо.md",
+                "file": "InfoBez/Постквантовая криптография/Лекции/OTUS Знакомство с постквантовой криптографией.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Полиномиальное кольцо"
+              "title": "OTUS Знакомство с постквантовой криптографией"
             }
           },
           {
-            "id": "4f24bb435e07b768",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "InfoBez/Постквантовая криптография/Kyber and Dilithium/KYBER KEM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "KYBER KEM"
-            }
-          },
-          {
-            "id": "596cf6957f5150db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Школа/Русский язык/Междометия.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Междометия"
-            }
-          },
-          {
-            "id": "f2fa0a008161af1f",
+            "id": "bfe7f0f6adc24c6a",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Школа/Русский язык/ОЧП.md"
-              },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
-            }
-          },
-          {
-            "id": "c18c5f1c1774488c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Однородные члены предложения.md"
-              },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
-            }
-          },
-          {
-            "id": "10e435d15328a464",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Сочинение.md"
-              },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
-            }
-          },
-          {
-            "id": "8273a0729a8be8c7",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Сложносочинённые предложения.md"
-              },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
-            }
-          },
-          {
-            "id": "8d38e134d401a906",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md"
-              },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
-            }
-          },
-          {
-            "id": "ed19011fa4bf8350",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/21 Двоеточие.md"
+                "file": "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md"
               },
               "icon": "excalidraw-icon",
-              "title": "21 Двоеточие"
+              "title": "Drawing 2025-06-24 09.26.53.excalidraw"
             }
           },
           {
-            "id": "82b33c2c63c8f5e8",
+            "id": "2a6bd79e078dae0d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-06-24 09.26.53.excalidraw"
+            }
+          },
+          {
+            "id": "c90e17e2c4cf0f79",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
@@ -134,7 +58,7 @@
             }
           }
         ],
-        "currentTab": 9
+        "currentTab": 3
       }
     ],
     "direction": "vertical"
@@ -191,7 +115,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b748d63baabac274",
@@ -279,10 +204,26 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "82b33c2c63c8f5e8",
+  "active": "c90e17e2c4cf0f79",
   "lastOpenFiles": [
-    "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md",
+    "Физика/ВСЕРОС Магнетизм/Магнетизм.md",
+    "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md",
+    "Физика/ВСЕРОС Магнетизм/Untitled.md",
+    "Физика/ВСЕРОС Магнетизм",
+    "Физика",
+    "InfoBez/Вторая смена Ноябрьск 2025.md",
+    "InfoBez/Зимняя олимпиадная школа МФТИ.md",
+    "InfoBez/Постквантовая криптография.md",
+    "InfoBez/Инфобез.md",
+    "ОлипПрога/Drawing 2025-10-09 18.55.26.excalidraw.md",
+    "InfoBez/Квантовые вычисления/Запутанные частицы.md",
+    "InfoBez/Квантовые вычисления/Простейшие операции над кубитом.md",
+    "InfoBez/Квантовые вычисления/Состояние кубита.md",
+    "InfoBez/Постквантовая криптография/Лекции/OTUS Знакомство с постквантовой криптографией.md",
+    "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Полезные записки.md",
+    "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Второй рут без следов.md",
     "Школа/Русский язык/19 Запятые в ССП.md",
+    "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md",
     "Школа/Русский язык/21 Двоеточие.md",
     "Школа/Русский язык/Untitled.md",
     "Школа/Русский язык/Сочинение.md",
@@ -291,19 +232,12 @@
     "Школа/Русский язык/ОЧП.md",
     "Школа/Русский язык/Междометия.md",
     "Школа/Русский язык/Логическая схема сочинения.md",
-    "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md",
     "InfoBez/Постквантовая криптография/Kyber and Dilithium/KYBER KEM.md",
     "ОлипПрога/ДП.md",
     "ОлипПрога",
-    "InfoBez/Постквантовая криптография/Основные направления/На решётках.md",
-    "InfoBez/Постквантовая криптография/Лекции/Лекция Антона Леевика.md",
     "InfoBez/Постквантовая криптография/Лекции/V1b-slides-Kyber-and-Dilithium.pdf",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо.md",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика.md",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо Rq.md",
     "Screenshots/Pasted image 20250208211809.png",
     "InfoBez/Постквантовая криптография/Лекции/V2-slides-Kyber-and-Dilithium.pdf",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Модульная арифметика.md",
     "Screenshots/Pasted image 20250208130202.png",
     "Screenshots/Pasted image 20250208125503.png",
     "Screenshots/Pasted image 20250208125456.png",
@@ -311,18 +245,9 @@
     "Pasted image 20250208125142.png",
     "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика",
     "InfoBez/Постквантовая криптография/Kyber and Dilithium",
-    "InfoBez/Постквантовая криптография/Основные направления/На изогениях.md",
-    "InfoBez/Постквантовая криптография/Алгоритмы защиты.md",
-    "InfoBez/Постквантовая криптография/Алгоритмы взлома.md",
-    "InfoBez/Постквантовая криптография.md",
-    "InfoBez/Инфобез.md",
-    "InfoBez/Зимняя олимпиадная школа МФТИ.md",
-    "InfoBez/Постквантовая криптография/Основные направления/На хэш функция.md",
     "InfoBez/Постквантовая криптография/Основные направления",
     "InfoBez/Постквантовая криптография/Лекции",
     "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты",
-    "InfoBez/Постквантовая криптография",
-    "InfoBez/Квантовые вычисления",
     "Screenshots/Pasted image 20250119151110.png",
     "Screenshots/Pasted image 20250118001650.png",
     "Screenshots/Pasted image 20250118001609.png",
