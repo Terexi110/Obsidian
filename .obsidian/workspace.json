@@ -57,8 +57,8 @@
               "state": {
                 "file": "Школа/Русский язык/ОЧП.md"
               },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
+              "icon": "excalidraw-icon",
+              "title": "ОЧП"
             }
           },
           {
@@ -69,8 +69,8 @@
               "state": {
                 "file": "Школа/Русский язык/Однородные члены предложения.md"
               },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
+              "icon": "excalidraw-icon",
+              "title": "Однородные члены предложения"
             }
           },
           {
@@ -81,8 +81,8 @@
               "state": {
                 "file": "Школа/Русский язык/Сочинение.md"
               },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
+              "icon": "excalidraw-icon",
+              "title": "Сочинение"
             }
           },
           {
@@ -93,8 +93,8 @@
               "state": {
                 "file": "Школа/Русский язык/Сложносочинённые предложения.md"
               },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
+              "icon": "excalidraw-icon",
+              "title": "Сложносочинённые предложения"
             }
           },
           {
@@ -105,24 +105,12 @@
               "state": {
                 "file": "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md"
               },
-              "icon": "lucide-ghost",
-              "title": "excalidraw"
+              "icon": "excalidraw-icon",
+              "title": "Drawing 2025-09-21 19.28.12.excalidraw"
             }
           },
           {
             "id": "ed19011fa4bf8350",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/21 Двоеточие.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "21 Двоеточие"
-            }
-          },
-          {
-            "id": "82b33c2c63c8f5e8",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
@@ -132,9 +120,45 @@
               "icon": "excalidraw-icon",
               "title": "19 Запятые в ССП"
             }
+          },
+          {
+            "id": "461b2e8caffc3893",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Школа/Русский язык/Запятые.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Запятые"
+            }
+          },
+          {
+            "id": "cb4204f9c82d343c",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Школа/Русский язык/Сочинение/Правила цитирования.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Правила цитирования"
+            }
+          },
+          {
+            "id": "60b3b3b5d9a6516d",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Школа/Русский язык/Сочинение/Сочинение 2.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Сочинение 2"
+            }
           }
         ],
-        "currentTab": 9
+        "currentTab": 11
       }
     ],
     "direction": "vertical"
@@ -191,7 +215,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 200,
+    "collapsed": true
   },
   "right": {
     "id": "b748d63baabac274",
@@ -279,18 +304,23 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "82b33c2c63c8f5e8",
+  "active": "60b3b3b5d9a6516d",
   "lastOpenFiles": [
-    "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md",
+    "Школа/Русский язык/Сочинение/Правила цитирования.md",
+    "Школа/Русский язык/Сочинение/Сочинение 2.md",
+    "Школа/Русский язык/Сочинение/Сочинение.md",
+    "Школа/Русский язык/Запятые.md",
+    "Школа/Русский язык/Сочинение/Untitled.md",
+    "Школа/Русский язык/Сочинение",
     "Школа/Русский язык/19 Запятые в ССП.md",
-    "Школа/Русский язык/21 Двоеточие.md",
-    "Школа/Русский язык/Untitled.md",
-    "Школа/Русский язык/Сочинение.md",
-    "Школа/Русский язык/Однородные члены предложения.md",
-    "Школа/Русский язык/Сложносочинённые предложения.md",
+    "Untitled.md",
     "Школа/Русский язык/ОЧП.md",
+    "Школа/Русский язык/Однородные члены предложения.md",
     "Школа/Русский язык/Междометия.md",
-    "Школа/Русский язык/Логическая схема сочинения.md",
+    "Школа/Русский язык/Сочинение/Логическая схема сочинения.md",
+    "Школа/Русский язык/21 Двоеточие.md",
+    "Школа/Русский язык/Сложносочинённые предложения.md",
+    "Школа/Русский язык/Untitled.md",
     "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md",
     "InfoBez/Постквантовая криптография/Kyber and Dilithium/KYBER KEM.md",
     "ОлипПрога/ДП.md",
@@ -314,15 +344,10 @@
     "InfoBez/Постквантовая криптография/Основные направления/На изогениях.md",
     "InfoBez/Постквантовая криптография/Алгоритмы защиты.md",
     "InfoBez/Постквантовая криптография/Алгоритмы взлома.md",
-    "InfoBez/Постквантовая криптография.md",
-    "InfoBez/Инфобез.md",
-    "InfoBez/Зимняя олимпиадная школа МФТИ.md",
-    "InfoBez/Постквантовая криптография/Основные направления/На хэш функция.md",
     "InfoBez/Постквантовая криптография/Основные направления",
     "InfoBez/Постквантовая криптография/Лекции",
     "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты",
     "InfoBez/Постквантовая криптография",
-    "InfoBez/Квантовые вычисления",
     "Screenshots/Pasted image 20250119151110.png",
     "Screenshots/Pasted image 20250118001650.png",
     "Screenshots/Pasted image 20250118001609.png",
