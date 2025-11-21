@@ -4,113 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "23e2e46e5bc74b91",
+        "id": "594e18c9a12b3a3c",
         "type": "tabs",
         "children": [
           {
-            "id": "1a61b3281755166a",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Полиномиальное кольцо"
-            }
-          },
-          {
-            "id": "4f24bb435e07b768",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "InfoBez/Постквантовая криптография/Kyber and Dilithium/KYBER KEM.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "KYBER KEM"
-            }
-          },
-          {
-            "id": "596cf6957f5150db",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Школа/Русский язык/Междометия.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Междометия"
-            }
-          },
-          {
-            "id": "f2fa0a008161af1f",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/ОЧП.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "ОЧП"
-            }
-          },
-          {
-            "id": "c18c5f1c1774488c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Однородные члены предложения.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Однородные члены предложения"
-            }
-          },
-          {
-            "id": "10e435d15328a464",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Сочинение.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Сочинение"
-            }
-          },
-          {
-            "id": "8273a0729a8be8c7",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Сложносочинённые предложения.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Сложносочинённые предложения"
-            }
-          },
-          {
-            "id": "8d38e134d401a906",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Drawing 2025-09-21 19.28.12.excalidraw.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Drawing 2025-09-21 19.28.12.excalidraw"
-            }
-          },
-          {
-            "id": "ed19011fa4bf8350",
+            "id": "235614a6a3817cdd",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
@@ -122,43 +20,19 @@
             }
           },
           {
-            "id": "461b2e8caffc3893",
+            "id": "a45a13a517f44426",
             "type": "leaf",
             "state": {
               "type": "excalidraw",
               "state": {
-                "file": "Школа/Русский язык/Запятые.md"
+                "file": "Школа/Русский язык/Сочинение/Темы с цитатами.md"
               },
               "icon": "excalidraw-icon",
-              "title": "Запятые"
-            }
-          },
-          {
-            "id": "cb4204f9c82d343c",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Сочинение/Правила цитирования.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Правила цитирования"
-            }
-          },
-          {
-            "id": "60b3b3b5d9a6516d",
-            "type": "leaf",
-            "state": {
-              "type": "excalidraw",
-              "state": {
-                "file": "Школа/Русский язык/Сочинение/Сочинение 2.md"
-              },
-              "icon": "excalidraw-icon",
-              "title": "Сочинение 2"
+              "title": "Темы с цитатами"
             }
           }
         ],
-        "currentTab": 11
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -215,8 +89,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 200,
-    "collapsed": true
+    "width": 200
   },
   "right": {
     "id": "b748d63baabac274",
@@ -304,16 +177,31 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "60b3b3b5d9a6516d",
+  "active": "a45a13a517f44426",
   "lastOpenFiles": [
-    "Школа/Русский язык/Сочинение/Правила цитирования.md",
+    "Screenshots/Pasted Image 20251121195521_043.png",
+    "Screenshots/Pasted Image 20251121194832_593.png",
+    "Screenshots/Pasted Image 20251121193503_001.png",
+    "Screenshots/Pasted Image 20251121193349_790.png",
+    "Screenshots/Pasted Image 20251121193042_887.png",
+    "Screenshots/Pasted Image 20251121192110_606.png",
+    "Школа/Русский язык/19 Запятые в ССП.md",
+    "Школа/Русский язык/Сочинение/Темы с цитатами.md",
+    "Школа/Русский язык/№8 ч.4.md",
+    "Projects/Timosha/Drawing 2025-11-01 21.01.59.excalidraw.md",
+    "Untitled.base",
+    "Projects/Timosha",
+    "Projects",
+    "Untitled.md",
+    "Untitled 3.base",
+    "Untitled 1.base",
+    "Untitled 2.base",
     "Школа/Русский язык/Сочинение/Сочинение 2.md",
+    "Школа/Русский язык/Сочинение/Правила цитирования.md",
     "Школа/Русский язык/Сочинение/Сочинение.md",
     "Школа/Русский язык/Запятые.md",
     "Школа/Русский язык/Сочинение/Untitled.md",
     "Школа/Русский язык/Сочинение",
-    "Школа/Русский язык/19 Запятые в ССП.md",
-    "Untitled.md",
     "Школа/Русский язык/ОЧП.md",
     "Школа/Русский язык/Однородные члены предложения.md",
     "Школа/Русский язык/Междометия.md",
@@ -333,24 +221,9 @@
     "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо Rq.md",
     "Screenshots/Pasted image 20250208211809.png",
     "InfoBez/Постквантовая криптография/Лекции/V2-slides-Kyber-and-Dilithium.pdf",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Модульная арифметика.md",
     "Screenshots/Pasted image 20250208130202.png",
     "Screenshots/Pasted image 20250208125503.png",
     "Screenshots/Pasted image 20250208125456.png",
-    "Pasted image 20250208125153.png",
-    "Pasted image 20250208125142.png",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium",
-    "InfoBez/Постквантовая криптография/Основные направления/На изогениях.md",
-    "InfoBez/Постквантовая криптография/Алгоритмы защиты.md",
-    "InfoBez/Постквантовая криптография/Алгоритмы взлома.md",
-    "InfoBez/Постквантовая криптография/Основные направления",
-    "InfoBez/Постквантовая криптография/Лекции",
-    "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты",
-    "InfoBez/Постквантовая криптография",
-    "Screenshots/Pasted image 20250119151110.png",
-    "Screenshots/Pasted image 20250118001650.png",
-    "Screenshots/Pasted image 20250118001609.png",
-    "Screenshots/Pasted image 20250118001122.png"
+    "Pasted image 20250208125153.png"
   ]
 }
