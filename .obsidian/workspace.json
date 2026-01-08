@@ -23,12 +23,14 @@
             "id": "a45a13a517f44426",
             "type": "leaf",
             "state": {
-              "type": "excalidraw",
+              "type": "markdown",
               "state": {
-                "file": "Школа/Русский язык/Сочинение/Темы с цитатами.md"
+                "file": "InfoBez/ОСИНТ/ОСИНТ и ИИ.md",
+                "mode": "source",
+                "source": false
               },
-              "icon": "excalidraw-icon",
-              "title": "Темы с цитатами"
+              "icon": "lucide-file",
+              "title": "ОСИНТ и ИИ"
             }
           }
         ],
@@ -179,6 +181,18 @@
   },
   "active": "a45a13a517f44426",
   "lastOpenFiles": [
+    "InfoBez/Квантовые вычисления/Состояние кубита.md",
+    "InfoBez/ОСИНТ/ОСИНТ и ИИ.md",
+    "InfoBez/ОСИНТ",
+    "InfoBez/Квантовые вычисления/Простейшие операции над кубитом.md",
+    "InfoBez/Квантовые вычисления/Запутанные частицы.md",
+    "InfoBez/Постквантовая криптография.md",
+    "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты/CTF.md",
+    "InfoBez/Зимняя олимпиадная школа МФТИ 2025/Контесты/Контесты.md",
+    "InfoBez/Вторая смена Ноябрьск 2025.md",
+    "InfoBez/Зимняя олимпиадная школа МФТИ.md",
+    "InfoBez/Инфобез.md",
+    "Школа/Русский язык/Сочинение/Темы с цитатами.md",
     "Screenshots/Pasted Image 20251121195521_043.png",
     "Screenshots/Pasted Image 20251121194832_593.png",
     "Screenshots/Pasted Image 20251121193503_001.png",
@@ -186,7 +200,6 @@
     "Screenshots/Pasted Image 20251121193042_887.png",
     "Screenshots/Pasted Image 20251121192110_606.png",
     "Школа/Русский язык/19 Запятые в ССП.md",
-    "Школа/Русский язык/Сочинение/Темы с цитатами.md",
     "Школа/Русский язык/№8 ч.4.md",
     "Projects/Timosha/Drawing 2025-11-01 21.01.59.excalidraw.md",
     "Untitled.base",
@@ -208,22 +221,11 @@
     "Школа/Русский язык/Сочинение/Логическая схема сочинения.md",
     "Школа/Русский язык/21 Двоеточие.md",
     "Школа/Русский язык/Сложносочинённые предложения.md",
-    "Школа/Русский язык/Untitled.md",
-    "ОлипПрога/Drawing 2025-06-24 09.26.53.excalidraw.md",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/KYBER KEM.md",
-    "ОлипПрога/ДП.md",
     "ОлипПрога",
-    "InfoBez/Постквантовая криптография/Основные направления/На решётках.md",
-    "InfoBez/Постквантовая криптография/Лекции/Лекция Антона Леевика.md",
     "InfoBez/Постквантовая криптография/Лекции/V1b-slides-Kyber-and-Dilithium.pdf",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо.md",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика.md",
-    "InfoBez/Постквантовая криптография/Kyber and Dilithium/Математика/Полиномиальное кольцо Rq.md",
     "Screenshots/Pasted image 20250208211809.png",
-    "InfoBez/Постквантовая криптография/Лекции/V2-slides-Kyber-and-Dilithium.pdf",
     "Screenshots/Pasted image 20250208130202.png",
     "Screenshots/Pasted image 20250208125503.png",
-    "Screenshots/Pasted image 20250208125456.png",
-    "Pasted image 20250208125153.png"
+    "Screenshots/Pasted image 20250208125456.png"
   ]
 }
