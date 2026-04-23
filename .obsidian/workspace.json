@@ -32,9 +32,21 @@
               "icon": "lucide-file",
               "title": "Как понять, что тебя взломали"
             }
+          },
+          {
+            "id": "38339fe57ca20036",
+            "type": "leaf",
+            "state": {
+              "type": "excalidraw",
+              "state": {
+                "file": "Школа/Русский язык/Сочинение/Сочинение 3.md"
+              },
+              "icon": "excalidraw-icon",
+              "title": "Сочинение 3"
+            }
           }
         ],
-        "currentTab": 1
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -179,10 +191,18 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "a45a13a517f44426",
+  "active": "06c1f417d9bc9c83",
   "lastOpenFiles": [
-    "InfoBez/ОСИНТ и СоиИнж/ОСИНТ и ИИ.md",
     "InfoBez/ОСИНТ и СоиИнж/Как понять, что тебя взломали.md",
+    "Школа/Русский язык/Сочинение/Сочинение 3.md",
+    "Школа/Русский язык/Сочинение/Untitled.md",
+    "Школа/Русский язык/Сочинение/Логическая схема сочинения.md",
+    "InfoBez/Math/Drawing 2026-02-05 15.52.02.excalidraw.md",
+    "Screenshots/Pasted Image 20260206114334_792.png",
+    "InfoBez/Math/Untitled.md",
+    "InfoBez/Math",
+    "Untitled",
+    "InfoBez/ОСИНТ и СоиИнж/ОСИНТ и ИИ.md",
     "InfoBez/Квантовые вычисления/Состояние кубита.md",
     "InfoBez/ОСИНТ и СоиИнж",
     "InfoBez/Квантовые вычисления/Простейшие операции над кубитом.md",
@@ -214,18 +234,10 @@
     "Школа/Русский язык/Сочинение/Правила цитирования.md",
     "Школа/Русский язык/Сочинение/Сочинение.md",
     "Школа/Русский язык/Запятые.md",
-    "Школа/Русский язык/Сочинение/Untitled.md",
     "Школа/Русский язык/Сочинение",
     "Школа/Русский язык/ОЧП.md",
-    "Школа/Русский язык/Однородные члены предложения.md",
-    "Школа/Русский язык/Междометия.md",
-    "Школа/Русский язык/Сочинение/Логическая схема сочинения.md",
-    "Школа/Русский язык/21 Двоеточие.md",
-    "ОлипПрога",
-    "InfoBez/Постквантовая криптография/Лекции/V1b-slides-Kyber-and-Dilithium.pdf",
     "Screenshots/Pasted image 20250208211809.png",
     "Screenshots/Pasted image 20250208130202.png",
-    "Screenshots/Pasted image 20250208125503.png",
-    "Screenshots/Pasted image 20250208125456.png"
+    "Screenshots/Pasted image 20250208125503.png"
   ]
 }
