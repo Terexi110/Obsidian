@@ -1,0 +1,1355 @@
+/* ════════════════════════════════════════════════════════════════
+   King's CalcLatex v2 — Styles
+   All classes prefixed with kcl- to avoid conflicts
+   ════════════════════════════════════════════════════════════════ */
+
+/* ── Inline Result Widget ─────────────────────────────────────── */
+
+.kcl-result {
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 6px;
+  padding: 1px 8px;
+  border-radius: 4px;
+  font-family: var(--font-monospace);
+  font-size: 0.9em;
+  color: var(--text-accent);
+  background-color: var(--background-secondary);
+}
+
+.kcl-result-loading {
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+.kcl-result-error {
+  color: var(--text-error);
+}
+
+/* ── 2D Graph Widget (Custom Canvas Renderer) ────────────────── */
+
+.kcl-graph-2d {
+  display: block;
+  width: 100%;
+  height: 400px;
+  margin: 8px 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--background-primary);
+  position: relative;
+  cursor: crosshair;
+}
+
+.kcl-graph-2d canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+.kcl-graph-2d.kcl-dragging {
+  cursor: grabbing;
+}
+
+/* ── 2D Reset View Button ──────────────────────────────────── */
+
+.kcl-graph-reset {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 15px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  transition: opacity 0.2s ease, background 0.15s ease;
+  z-index: 5;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.kcl-graph-2d:hover .kcl-graph-reset,
+.kcl-graph-3d:hover .kcl-graph-reset {
+  opacity: 0.8;
+}
+
+.kcl-graph-grid-btn {
+  right: 44px;
+}
+
+.kcl-graph-poi-btn {
+  right: 80px;
+}
+
+.kcl-graph-poi-btn.is-poi-disabled {
+  opacity: 0.4 !important;
+}
+
+.kcl-graph-reset:hover {
+  opacity: 1 !important;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.theme-light .kcl-graph-reset {
+  background: rgba(0, 0, 0, 0.15);
+  color: #333;
+}
+
+.theme-light .kcl-graph-reset:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ── 3D Graph Widget ──────────────────────────────────────────── */
+
+.kcl-graph-3d {
+  display: block;
+  width: 100%;
+  min-height: 400px;
+  height: 400px;
+  margin: 8px 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--background-secondary);
+  position: relative;
+  cursor: pointer;
+}
+
+.kcl-graph-3d canvas {
+  width: 100% !important;
+  height: 100% !important;
+  display: block;
+}
+
+/* ── 3D Snapshot Image ─────────────────────────────────────── */
+
+.kcl-graph-3d-snapshot {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  pointer-events: none;
+}
+
+/* ── "Click to interact" hint overlay ──────────────────────── */
+
+.kcl-graph-3d-hint {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.55);
+  color: #fff;
+  padding: 4px 14px;
+  border-radius: 12px;
+  font-size: 0.78em;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.kcl-graph-3d:hover .kcl-graph-3d-hint {
+  opacity: 1;
+}
+
+/* ── Close button (interactive mode) ──────────────────────── */
+
+.kcl-graph-3d-close {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  transition: background 0.15s ease;
+}
+
+.kcl-graph-3d-close:hover {
+  background: rgba(0, 0, 0, 0.75);
+}
+
+/* ── Graph Loading State ──────────────────────────────────────── */
+
+.kcl-graph-loading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+/* ── Graph Error State ────────────────────────────────────────── */
+
+.kcl-graph-error {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--text-error);
+  font-size: 0.85em;
+  text-align: center;
+  padding: 0 20px;
+}
+
+.kcl-graph-error-3d {
+  padding: 12px;
+  color: #e55;
+  font-size: 13px;
+  font-family: monospace;
+  border: 1px solid #e55;
+  border-radius: 4px;
+  background: #2a1515;
+}
+
+/* ── Graph Inspector Sidebar ──────────────────────────────────── */
+
+.kcl-inspector {
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+  overflow-y: auto;
+}
+
+.kcl-inspector-header h4 {
+  margin: 0 0 4px 0;
+  color: var(--text-accent);
+}
+
+.kcl-inspector-summary {
+  color: var(--text-muted);
+  font-size: 0.85em;
+  margin: 0;
+}
+
+.kcl-inspector-graph {
+  width: 100%;
+  height: 350px;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.kcl-inspector-controls {
+  display: flex;
+  gap: 8px;
+}
+
+.kcl-inspector-controls button {
+  flex: 1;
+}
+
+.kcl-inspector-diagnostics {
+  border-top: 1px solid var(--background-modifier-border);
+  padding-top: 12px;
+}
+
+.kcl-inspector-diagnostics h5 {
+  margin: 0 0 8px 0;
+}
+
+.kcl-inspector-diagnostics ul {
+  padding-left: 20px;
+  color: var(--text-muted);
+  font-size: 0.85em;
+  margin: 0;
+}
+
+/* ── Graph Wrapper (graph + slider container) ─────────────────── */
+
+.kcl-graph-wrapper {
+  margin: 8px 0;
+}
+
+.kcl-graph-wrapper .kcl-graph-2d,
+.kcl-graph-wrapper .kcl-graph-3d {
+  margin: 0; /* wrapper handles the margin */
+}
+
+.kcl-slider-container {
+  padding: 8px 12px;
+  border: 1px solid var(--background-modifier-border);
+  border-top: none;
+  border-radius: 0 0 8px 8px;
+  background-color: var(--background-secondary);
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+/* ── Parameter Sliders ────────────────────────────────────────── */
+
+.kcl-slider-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kcl-slider-label {
+  min-width: 30px;
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+  color: var(--text-muted);
+}
+
+.kcl-slider-input {
+  flex: 1;
+}
+
+.kcl-slider-value {
+  min-width: 50px;
+  text-align: right;
+  font-family: var(--font-monospace);
+  font-size: 0.85em;
+}
+
+/* ── Graph Toolbar (Fullscreen + Screenshot) ──────────────────── */
+
+.kcl-graph-toolbar {
+  position: absolute;
+  top: 8px;
+  right: 80px; /* offset to the left of reset + grid toggle buttons */
+  display: flex;
+  gap: 4px;
+  z-index: 6;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+
+.kcl-graph-2d:hover .kcl-graph-toolbar,
+.kcl-graph-3d:hover .kcl-graph-toolbar {
+  opacity: 0.8;
+}
+
+.kcl-graph-toolbar button {
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  border: none;
+  background: rgba(0, 0, 0, 0.35);
+  color: #fff;
+  font-size: 14px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.15s ease, background 0.15s ease;
+  font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+  padding: 0;
+}
+
+.kcl-graph-toolbar button:hover {
+  opacity: 1 !important;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.theme-light .kcl-graph-toolbar button {
+  background: rgba(0, 0, 0, 0.15);
+  color: #333;
+}
+
+.theme-light .kcl-graph-toolbar button:hover {
+  background: rgba(0, 0, 0, 0.25);
+}
+
+/* ── Browser Fullscreen Mode ──────────────────────────────────── */
+
+.kcl-graph-2d:fullscreen,
+.kcl-graph-3d:fullscreen,
+.kcl-graph-fullscreen {
+  width: 100% !important;
+  height: 100% !important;
+  border-radius: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
+.kcl-graph-2d:fullscreen .kcl-graph-toolbar,
+.kcl-graph-3d:fullscreen .kcl-graph-toolbar,
+.kcl-graph-fullscreen .kcl-graph-toolbar {
+  opacity: 0.8;
+}
+
+.kcl-graph-2d:fullscreen .kcl-graph-reset,
+.kcl-graph-3d:fullscreen .kcl-graph-reset,
+.kcl-graph-2d:fullscreen .kcl-graph-3d-close,
+.kcl-graph-3d:fullscreen .kcl-graph-3d-close,
+.kcl-graph-fullscreen .kcl-graph-reset,
+.kcl-graph-fullscreen .kcl-graph-3d-close {
+  opacity: 0.8;
+}
+
+/* ── Fullscreen Hint ─────────────────────────────────────────── */
+
+.kcl-graph-fullscreen-hint {
+  position: absolute;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.85em;
+  z-index: 20;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.kcl-graph-fullscreen-hint.kcl-fading {
+  opacity: 0;
+}
+
+/* ── Copied Toast ────────────────────────────────────────────── */
+
+.kcl-graph-copied-toast {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 8px;
+  font-size: 0.9em;
+  z-index: 10;
+  pointer-events: none;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+
+.kcl-graph-copied-toast.kcl-fading {
+  opacity: 0;
+}
+
+/* ── 3D Expression Labels (HTML overlay) ──────────────────── */
+
+/* ── 2D Expression Labels (DOM overlay, rendered math) ─────── */
+
+.kcl-graph-2d-labels {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  pointer-events: none;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kcl-graph-2d-label {
+  font-size: 11px;
+  line-height: 1.4;
+  white-space: nowrap;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.5);
+}
+
+.theme-light .kcl-graph-2d-label {
+  text-shadow: 0 0 4px rgba(255, 255, 255, 0.8);
+}
+
+/* MathJax elements inside graph labels */
+.kcl-graph-2d-label mjx-container,
+.kcl-graph-3d-label mjx-container {
+  display: inline !important;
+  font-size: 0.95em !important;
+}
+
+/* ── 3D Expression Labels ──────────────────────────────────── */
+
+.kcl-graph-3d-labels {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  pointer-events: none;
+  z-index: 4;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.kcl-graph-3d-label {
+  font-size: 11px;
+  line-height: 1.4;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.6);
+  white-space: nowrap;
+}
+
+.theme-light .kcl-graph-3d-label {
+  text-shadow: 0 0 3px rgba(255, 255, 255, 0.8);
+}
+
+/* ── 3D Hover Tooltip ─────────────────────────────────────── */
+
+.kcl-graph-3d-tooltip {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.75);
+  color: #fff;
+  padding: 3px 10px;
+  border-radius: 6px;
+  font-family: var(--font-monospace);
+  font-size: 11px;
+  pointer-events: none;
+  z-index: 5;
+  white-space: nowrap;
+}
+
+.theme-light .kcl-graph-3d-tooltip {
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* ── Data Table Widget ───────────────────────────────────── */
+
+.kcl-table-widget {
+  margin: 8px 0;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: var(--background-secondary);
+  font-size: 0.85em;
+}
+
+.kcl-table-widget.kcl-table-error {
+  padding: 12px 16px;
+  color: var(--text-error);
+  border-color: var(--text-error);
+}
+
+.kcl-table-summary {
+  padding: 6px 12px;
+  color: var(--text-muted);
+  font-size: 0.9em;
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-family: var(--font-monospace);
+}
+
+.kcl-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--font-monospace);
+}
+
+.kcl-table thead th {
+  padding: 6px 12px;
+  text-align: right;
+  color: var(--text-accent);
+  font-weight: 600;
+  border-bottom: 1px solid var(--background-modifier-border);
+  font-size: 0.9em;
+}
+
+.kcl-table thead th:first-child {
+  text-align: center;
+  color: var(--text-muted);
+  font-weight: normal;
+}
+
+.kcl-table tbody td {
+  padding: 4px 12px;
+  text-align: right;
+  border-bottom: 1px solid var(--background-modifier-border);
+}
+
+.kcl-table tbody td:first-child {
+  text-align: center;
+  color: var(--text-muted);
+  font-size: 0.85em;
+}
+
+.kcl-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.kcl-table tbody tr:hover {
+  background-color: var(--background-modifier-hover);
+}
+
+/* ── Slider Play/Pause Button ─────────────────────────────── */
+
+.kcl-slider-play {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.kcl-slider-play:hover {
+  color: var(--text-accent);
+  background: var(--background-modifier-hover);
+}
+
+/* ── Slider Record / Export Button ───────────────────────── */
+
+.kcl-slider-record {
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  border: none;
+  background: transparent;
+  color: var(--text-muted);
+  font-size: 11px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  flex-shrink: 0;
+  transition: color 0.15s ease, background 0.15s ease;
+}
+
+.kcl-slider-record:hover {
+  color: var(--text-accent);
+  background: var(--background-modifier-hover);
+}
+
+.kcl-slider-record.recording {
+  color: #e05555;
+  animation: kcl-rec-pulse 1s ease-in-out infinite;
+}
+
+@keyframes kcl-rec-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.35; }
+}
+
+/* ════════════════════════════════════════════════════════════════
+   Excalidraw OD Companion Styles
+   ════════════════════════════════════════════════════════════════ */
+
+.kcl-preview-tooltip {
+  position: fixed;
+  z-index: 10000;
+  padding: 8px 12px;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  pointer-events: none;
+  max-width: 450px;
+  max-height: 220px;
+  overflow: hidden;
+}
+
+.kcl-preview-tooltip img {
+  max-width: 100%;
+  max-height: 200px;
+  display: block;
+}
+
+.theme-dark .kcl-preview-tooltip {
+  background: var(--background-secondary);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+}
+
+.theme-dark .kcl-preview-tooltip img {
+  filter: invert(1) hue-rotate(180deg);
+}
+
+/* Live MathJax preview injected into Excalidraw's native LaTeX modal --
+   replaces the "Install Latex Suite" suggestion banner it shows otherwise. */
+.kcl-latex-live-preview {
+  margin: 14px 0 6px 0;
+  padding: 10px 14px;
+  min-height: 1.5em;
+  background: var(--background-secondary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  box-sizing: border-box;
+  text-align: center;
+  overflow-x: auto;
+}
+
+.kcl-latex-live-preview:empty {
+  display: none;
+}
+
+/* Color Dots Selector Bar */
+.kcl-latex-color-bar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin: 14px 0 6px 0;
+  padding: 8px 12px;
+  background: var(--background-secondary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.kcl-latex-color-bar-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  user-select: none;
+}
+
+.kcl-latex-color-bar-dots {
+  display: flex;
+  gap: 8px;
+}
+
+.kcl-latex-color-dot {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  border: 2px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), box-shadow 0.15s ease, border-color 0.15s ease;
+}
+
+.kcl-latex-color-dot:hover {
+  transform: scale(1.25);
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.2);
+}
+
+.kcl-latex-color-dot.is-active {
+  border-color: var(--text-accent);
+  transform: scale(1.15);
+  box-shadow: 0 0 6px rgba(0, 0, 0, 0.15);
+}
+
+.kcl-latex-color-clear {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--background-modifier-border);
+  color: var(--text-muted);
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.15s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.15s ease, color 0.15s ease;
+  user-select: none;
+}
+
+.kcl-latex-color-clear:hover {
+  transform: scale(1.25);
+  background: var(--background-modifier-error);
+  color: white;
+}
+
+/* ── LaTeX Equation Boxing Panel ── */
+
+.kcl-latex-box-panel {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 6px 0 14px 0;
+  padding: 12px;
+  background: var(--background-secondary-alt);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 8px;
+  box-sizing: border-box;
+}
+
+.kcl-latex-box-toggle-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kcl-latex-box-toggle-label {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--text-muted);
+  user-select: none;
+}
+
+.kcl-latex-box-toggle-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  padding: 0;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  color: var(--text-muted);
+  cursor: pointer;
+  transition: background-color 0.15s ease, border-color 0.15s ease, color 0.15s ease, transform 0.1s ease;
+}
+
+.kcl-latex-box-toggle-btn:hover {
+  background: var(--background-secondary);
+  color: var(--text-normal);
+}
+
+.kcl-latex-box-toggle-btn.is-active {
+  background: var(--text-accent-hover, var(--background-modifier-border-hover));
+  border-color: var(--interactive-accent, var(--text-accent));
+  color: var(--interactive-accent, var(--text-accent));
+  box-shadow: 0 0 4px rgba(var(--interactive-accent-rgb), 0.2);
+}
+
+/* Collapsible Settings Grid */
+.kcl-latex-box-settings-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-top: 8px;
+  border-top: 1px dashed var(--background-modifier-border);
+}
+
+.kcl-latex-box-settings-grid.is-collapsed {
+  display: none;
+}
+
+.kcl-latex-box-row {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.kcl-latex-box-row-label {
+  font-size: 11px;
+  font-weight: 500;
+  color: var(--text-muted);
+  width: 80px;
+  flex-shrink: 0;
+  user-select: none;
+}
+
+.kcl-border-colors-container,
+.kcl-bg-colors-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.kcl-latex-border-color-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.1s ease, border-color 0.1s ease;
+}
+
+.kcl-latex-border-color-dot:hover {
+  transform: scale(1.2);
+}
+
+.kcl-latex-border-color-dot.is-active {
+  border-color: var(--text-accent);
+  transform: scale(1.1);
+}
+
+.kcl-latex-border-color-dot.is-sync {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background-primary);
+  border: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+}
+
+.kcl-latex-border-color-dot.is-sync:hover {
+  color: var(--text-normal);
+}
+
+.kcl-latex-border-color-dot.is-sync.is-active {
+  border-color: var(--text-accent);
+  color: var(--text-accent);
+}
+
+.kcl-latex-bg-dot {
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+  border: 1.5px solid transparent;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: transform 0.1s ease, border-color 0.1s ease;
+}
+
+.kcl-latex-bg-dot:hover {
+  transform: scale(1.2);
+}
+
+.kcl-latex-bg-dot.is-active {
+  border-color: var(--text-accent);
+  transform: scale(1.1);
+}
+
+.kcl-latex-bg-dot.is-clear {
+  position: relative;
+  background: var(--background-primary);
+  border: 1.5px solid var(--background-modifier-border);
+}
+
+.kcl-latex-bg-dot.is-clear::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: var(--background-modifier-error);
+  transform: translateY(-50%) rotate(-45deg);
+}
+
+.kcl-latex-bg-dot.is-clear.is-active {
+  border-color: var(--text-accent);
+}
+
+.kcl-button-group {
+  display: flex;
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--background-primary);
+}
+
+.kcl-button-group .kcl-btn {
+  background: transparent;
+  border: none;
+  border-right: 1px solid var(--background-modifier-border);
+  color: var(--text-muted);
+  padding: 4px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  border-radius: 0;
+  margin: 0;
+  height: auto;
+  box-shadow: none;
+}
+
+.kcl-button-group .kcl-btn:last-child {
+  border-right: none;
+}
+
+.kcl-button-group .kcl-btn:hover {
+  background: var(--background-secondary-alt);
+  color: var(--text-normal);
+}
+
+.kcl-button-group .kcl-btn.is-active {
+  background: var(--background-modifier-border-hover);
+  color: var(--text-accent);
+}
+
+/* Text Styles Underline Button */
+.kcl-text-styles-container {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.kcl-underline-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  padding: 0;
+  background: var(--button-bg-color, var(--background-primary));
+  border: 1px solid var(--button-border-color, var(--background-modifier-border));
+  border-radius: 6px;
+  color: var(--icon-fill-color, var(--text-normal));
+  cursor: pointer;
+}
+
+.kcl-underline-btn.is-active {
+  background: var(--button-active-bg-color, var(--background-modifier-border-hover));
+  border-color: var(--interactive-accent, var(--text-accent));
+  color: var(--interactive-accent, var(--text-accent));
+}
+
+.kcl-underline-icon {
+  display: block;
+}
+
+/* Settings Tab Heading Classes (Setting().setHeading() replacements for raw h2-h4) */
+.kcl-settings-section-header,
+.kcl-settings-section-header .setting-item-name {
+  color: var(--text-accent);
+}
+
+.kcl-settings-section-header {
+  margin-top: 2em;
+  border-bottom: 1px solid var(--background-modifier-border);
+  padding-bottom: 0.3em;
+}
+
+.kcl-settings-section-header-first {
+  margin-top: 1.5em;
+}
+
+.kcl-settings-subsection-header,
+.kcl-settings-subsection-header .setting-item-name {
+  color: var(--text-muted);
+}
+
+.kcl-settings-subsection-header {
+  margin-top: 1.2em;
+}
+
+/* Excalidraw LaTeX Modal Positioning Classes.
+   Applied via explicit classList calls in latex-modal.ts's applyModalPosition() rather
+   than :has() -- :has() would work here too, but an explicit class removes any
+   dependency on :has() resolving as expected (and sidesteps the CSS-lint Warning
+   against using :has() for broad selector invalidation). */
+.kcl-latex-modal-container {
+  display: flex !important;
+  pointer-events: none !important;
+  z-index: 1000 !important;
+}
+
+/* Position: Bottom (Default) */
+.modal-container.kcl-modal-container-bottom {
+  align-items: flex-end !important;
+  justify-content: center !important;
+  padding-bottom: 40px !important;
+}
+
+/* Position: Top */
+.modal-container.kcl-modal-container-top {
+  align-items: flex-start !important;
+  justify-content: center !important;
+  padding-top: 60px !important;
+}
+
+/* Position: Center */
+.modal-container.kcl-modal-container-center {
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+/* Position: Cursor (Floating near active area) */
+.modal-container.kcl-modal-container-cursor {
+  align-items: flex-end !important;
+  justify-content: center !important;
+  padding-bottom: 80px !important;
+}
+
+/* Static shape for the LaTeX modal's fixed-position variants, applied in
+   latex-modal.ts's applyModalPosition(). The dynamic, rect-derived pixel offsets
+   (bottom/top/left) stay as direct inline !important writes in JS -- ESLint's
+   obsidianmd/no-static-styles-assignment only flags STATIC-literal style writes,
+   so only the fixed strings below (never the computed values) needed moving here. */
+.kcl-latex-modal-positioned {
+  position: fixed !important;
+  pointer-events: auto !important;
+  margin: 0 !important;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4) !important;
+}
+
+.kcl-latex-modal-pos-bottom,
+.kcl-latex-modal-pos-top {
+  transform: translateX(-50%) !important;
+}
+
+.kcl-latex-modal-pos-bottom {
+  top: auto !important;
+}
+
+.kcl-latex-modal-pos-top {
+  bottom: auto !important;
+}
+
+.kcl-latex-modal-pos-center {
+  top: 50% !important;
+  left: 50% !important;
+  transform: translate(-50%, -50%) !important;
+}
+
+/* Static shape for the math-preview tooltip's fixed positioning in
+   latex-modal.ts's positionTooltip(). left/top stay dynamic inline !important
+   writes (see the JS comment) -- required to win against Excalidraw's own
+   !important CSS-anchor-positioning rules for .cm-tooltip-cursor.cm-tooltip. */
+.kcl-latex-tooltip-positioned {
+  position: fixed !important;
+  transform: none !important;
+}
+
+/* Long, unwrapped LaTeX source should pan horizontally to keep the cursor in view
+   (like a single-line text field) rather than being clipped with no way to reach it --
+   this only has a fixed box to pan *within* once latex-modal.ts's applyModalPosition()
+   caps .modal's max-width to the Excalidraw pane; pinned explicitly here as insurance
+   rather than relying on CM6's default base-theme value continuing to hold. */
+.excalidraw-LatexPrompt .cm-editor .cm-scroller {
+  overflow-x: auto !important;
+}
+
+/* ══════════════════════════════════════════════════════════════
+   LaTeX Suite Engine Styles
+   Ported from upstream artisticat1/obsidian-latex-suite `styles.css`.
+   The vendored JS in src/latex-suite/** was cloned, but its stylesheet
+   was not -- without these rules, conceal, tabstop placeholders, bracket
+   highlighting/coloring, and the math preview tooltip all compute correct
+   DOM decorations but render as plain unstyled text (v3.3.1 fix).
+   Only sections actually referenced by our live src/latex-suite/** code
+   are included; the settings-panel and fancy-snippets-editor sections of
+   upstream's stylesheet are omitted since we don't use those UI patterns.
+   ══════════════════════════════════════════════════════════════ */
+
+/* --- Snippet tabstop placeholder colors (snippets/tabstop.ts) --- */
+
+.latex-suite-snippet-placeholder {
+  border-radius: 2px;
+  background-color: var(--placeholder-bg);
+  outline: var(--placeholder-outline) solid 1px;
+}
+
+.latex-suite-snippet-placeholder-0, span.latex-suite-snippet-placeholder-0 span {
+  --placeholder-bg: #87cefa2e;
+  --placeholder-outline: #87cefa6e;
+}
+
+.theme-dark .latex-suite-snippet-placeholder-0, span.latex-suite-snippet-placeholder-0 span {
+  --placeholder-outline: #87cefa43;
+}
+
+.latex-suite-snippet-placeholder-1, span.latex-suite-snippet-placeholder-1 span {
+  --placeholder-bg: #ffa50033;
+  --placeholder-outline: #ffa5006b;
+}
+
+.theme-dark .latex-suite-snippet-placeholder-1, span.latex-suite-snippet-placeholder-1 span {
+  --placeholder-outline: #ffa5004d;
+}
+
+.latex-suite-snippet-placeholder-2, span.latex-suite-snippet-placeholder-2 span {
+  --placeholder-bg: #00ff0022;
+  --placeholder-outline: #00ff0060;
+}
+
+.theme-dark .latex-suite-snippet-placeholder-2, span.latex-suite-snippet-placeholder-2 span {
+  --placeholder-outline: #00ff003d;
+}
+
+.cm-snippetFieldPosition {
+  vertical-align: text-top;
+  width: 0;
+  height: 1.15em;
+  display: inline-block;
+  margin: 0 -0.7px -0.7em;
+  border-left: 1.4px dotted #888;
+}
+
+/* --- Conceal (editor_extensions/conceal.ts, conceal_fns.ts) --- */
+
+span.cm-math.cm-concealed-bold {
+  font-weight: bold;
+}
+
+span.cm-math.cm-concealed-underline {
+  text-decoration: underline;
+}
+
+span.cm-math.cm-concealed-mathrm, sub.cm-math.cm-concealed-mathrm {
+  font-style: normal;
+}
+
+/* Conceal superscripts without changing line height */
+sup.cm-math {
+  line-height: 0;
+}
+
+sup.cm-math, sub.cm-math {
+  font-style: italic;
+}
+
+/* --- Inline math preview tooltip (editor_extensions/math_tooltip.ts) --- */
+
+.theme-light .cm-tooltip.cm-tooltip-cursor {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.028), 0px 3.4px 6.7px rgba(0, 0, 0, .042), 0px 5px 20px rgba(0, 0, 0, .07);
+}
+
+.theme-dark .cm-tooltip.cm-tooltip-cursor {
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.1),
+    0px 3.4px 6.7px rgba(0, 0, 0, 0.15),
+    0px 0px 30px rgba(0, 0, 0, 0.27);
+}
+
+/* CM6 puts the top of the tooltip higher than what's viewable (negative top value),
+so to compensate for this, we align the content to the bottom of the tooltip container,
+and limit the height. */
+.cm-tooltip.cm-tooltip-cursor.cm-tooltip-above {
+  display: flex;
+}
+
+.cm-tooltip.cm-tooltip-cursor.cm-tooltip-above > .MathJax {
+  overflow-y: auto;
+  max-height: 70%;
+  display: inline-block;
+  align-self: flex-end;
+}
+
+.cm-tooltip.cm-tooltip-cursor.cm-tooltip-below > .MathJax {
+  overflow-y: auto;
+  max-height: 90%;
+}
+
+.latex-suite-math-preview-highlight {
+  background-color: var(--text-selection);
+}
+
+/* --- Bracket highlighting & color matching (editor_extensions/highlight_brackets.ts) --- */
+
+.theme-light .latex-suite-highlighted-bracket, .theme-light .latex-suite-highlighted-bracket [class^="latex-suite-color-bracket-"] {
+  background-color: hsl(var(--accent-h), var(--accent-s), 40%, 0.3);
+}
+
+.theme-dark .latex-suite-highlighted-bracket, .theme-dark .latex-suite-highlighted-bracket [class^="latex-suite-color-bracket-"] {
+  background-color: hsl(var(--accent-h), var(--accent-s), 70%, 0.6);
+}
+
+.theme-light .latex-suite-color-bracket-0, .theme-light .latex-suite-color-bracket-0 .cm-bracket {
+  color: #527aff;
+}
+
+.theme-dark .latex-suite-color-bracket-0, .theme-dark .latex-suite-color-bracket-0 .cm-bracket {
+  color: #47b8ff;
+}
+
+.theme-light .latex-suite-color-bracket-1, .theme-light .latex-suite-color-bracket-1 .cm-bracket {
+  color: #ff50b7;
+}
+
+.theme-dark .latex-suite-color-bracket-1, .theme-dark .latex-suite-color-bracket-1 .cm-bracket {
+  color: #ff55cd;
+}
+
+.theme-light .latex-suite-color-bracket-2, .theme-light .latex-suite-color-bracket-2 .cm-bracket {
+  color: #69ba00;
+}
+
+.theme-dark .latex-suite-color-bracket-2, .theme-dark .latex-suite-color-bracket-2 .cm-bracket {
+  color: #73ff63;
+}
+
+.theme-light .latex-suite-mismatched-bracket, .theme-light .latex-suite-mismatched-bracket .cm-bracket {
+  color: rgb(255, 18, 18, 0.8);
+}
+
+.theme-dark .latex-suite-mismatched-bracket, .theme-dark .latex-suite-mismatched-bracket .cm-bracket {
+  color: rgb(255, 18, 18, 0.8);
+}
+
+/* ── Excalidraw OD Floating Shortcut HUD ── */
+
+.kcl-shortcut-hud {
+  position: absolute;
+  bottom: 24px;
+  left: 50%;
+  transform: translateX(-50%) translateY(12px);
+  z-index: 999999;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 16px;
+  background: rgba(20, 20, 25, 0.88);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.18s cubic-bezier(0.16, 1, 0.3, 1), transform 0.18s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.kcl-shortcut-hud.is-visible {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+.kcl-hud-title {
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.6);
+  user-select: none;
+}
+
+.kcl-hud-variants {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.kcl-hud-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 3px 8px;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 6px;
+  font-size: 12px;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.85);
+  transition: all 0.15s ease;
+}
+
+.kcl-hud-badge kbd {
+  display: inline-block;
+  padding: 1px 5px;
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 4px;
+  font-family: var(--font-monospace, monospace);
+  font-size: 11px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.kcl-hud-badge.is-active {
+  background: var(--interactive-accent, #6366f1);
+  border-color: var(--interactive-accent-hover, #818cf8);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.4);
+}
+
+.kcl-hud-badge.is-active kbd {
+  background: rgba(0, 0, 0, 0.3);
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+
+

@@ -1,5 +1,8 @@
 [
   "card-note",
   "obsidian-excalidraw-plugin",
-  "obsidian-math-plus"
+  "obsidian-math-plus",
+  "agent-client",
+  "obsidian-latex-suite",
+  "kings-calclatex"
 ]
